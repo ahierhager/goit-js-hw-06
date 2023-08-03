@@ -8,3 +8,4 @@ items.forEach((item) => {
   const subCategories = item.querySelectorAll('ul li');
   console.log(`Category: ${categoryTitle}, Number of subcategories: ${subCategories.length}`);
 });
+

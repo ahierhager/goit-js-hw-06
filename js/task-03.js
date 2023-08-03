@@ -12,3 +12,9 @@ const images = [
     alt: 'Group of Horses Running',
   },
 ];
+
+const ulElement = document.querySelector(".gallery"); // Corrected selector for the gallery element
+const markup = images
+  .map((image) => `<li class="list-item"><img src="${image.url}" alt="${image.alt}"></li>`) // Use <img> tag to display images
+  .join("");
+ulElement.insertAdjacentHTML("afterbegin", markup);
